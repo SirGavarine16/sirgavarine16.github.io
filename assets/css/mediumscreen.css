@@ -936,8 +936,8 @@ ul {
 }
 /*  FOOTER SECTION STYLE    */
 .footer {
-    padding-top: 55px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .footer-container {
     display: flex;
