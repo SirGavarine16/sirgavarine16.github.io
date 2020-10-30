@@ -1,9 +1,10 @@
 $(function () {
     //AUXILIAR VARS
     var auxVarSlideshow = 1;
+    var statisticsReached = false;
 
     //  AUXILIAR FUNCTIONS
-    function advanceSkillometers(){
+    function advanceSkillometers() {
         //Advance lines
         $('#skillometer1_line60').addClass('skillometer-line60');
         $('#skillometer1_line70').addClass('skillometer-line70');
@@ -28,6 +29,32 @@ $(function () {
         $('#circle60_row2').addClass('expertise60');
         $('#circle90_row2').addClass('expertise90');
         $('#circle70_row2').addClass('expertise70');
+    }
+
+    function setStatisticsUp() {
+        var i = 1;                  
+        function myLoop() {         
+            setTimeout(function () {   
+                if (i < 26) {
+                    $('#apples').text(i + 1);
+                }
+                if (i < 120) {
+                    $('#coffees').text(i + 1);
+                }
+                if (i < 257) {
+                    $('#tumblrs').text(i + 1);
+                }
+                if (i < 37) {
+                    $('#mangas').text(i + 1);
+                }
+                i++;                    
+                if (i < 567) {           
+                    myLoop();             
+                }                       
+            }, 1)
+        }
+
+        myLoop();                   
     }
 
     function calculateElementOnScreen() {
@@ -56,6 +83,11 @@ $(function () {
             wipeOutNavBarClass('#li_portfolio');
             $('#li_portfolio').removeClass('sidebar-inactive');
             console.log('portfolio');
+        }
+        if (isElementReached('#statistics') && statisticsReached === false) {
+            console.log('statistics');
+            statisticsReached = true;
+            setStatisticsUp();
         }
         if (isElementReached('#testimonials')) {
             wipeOutNavBarClass('#li_testimonials');
@@ -107,6 +139,7 @@ $(function () {
     }
 
     $(window).on('load', function () {
+        statisticsReached = false;
         setTimeout(function loaderOff() {
             $('#spinner-loader').addClass('loader-container-fadeout')
             setTimeout(() => {
