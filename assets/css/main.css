@@ -233,6 +233,14 @@ input, textarea {
     color: #6c5ce7 !important;
 }
 
+.hm-social-icon {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.hm-social-a:hover .hm-social-icon {
+    opacity: 1;
+}
+
 @media (min-width:1500px) {
     .container {
         background-color: white;
