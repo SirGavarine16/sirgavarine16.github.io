@@ -412,13 +412,13 @@ input, textarea {
         width: .25rem;
         height: 90%;
         top: 13%;
-        left: 50.25%;
+        left: 50%;
         opacity: 0.8;
     }
     .timeline-line-end-icon {
         position: absolute;
         top: 102.5%;
-        left: 49%;
+        left: 48.5%;
         opacity: 0.8;
     }
     .timeline-start-container {
@@ -503,7 +503,7 @@ input, textarea {
     }
     .timeline-card-icon-container1 {
         margin-top: 2rem;
-        margin-left: 4%;
+        margin-left: 3.625%;
         margin-right: 5%;
     }
     .timeline-card-icon-container2 {
