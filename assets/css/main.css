@@ -595,13 +595,13 @@ input, textarea {
     }
     .educationalvalue-icon-container-left {
         position: absolute;
-        top: 43.5%;
+        top: 38.8%;
         left: 0;
         z-index: 10;
     }
     .educationalvalue-icon-container-right {
         position: absolute;
-        top: 43.5%;
+        top: 38.8%;
         right: 0;
         z-index: 10;
     }
@@ -610,7 +610,7 @@ input, textarea {
         position: absolute;
         height: .25rem;
         width: 97%;
-        top: 49.5%;
+        top: 44%;
         left: 1.5%;
         opacity: 0.8;
     }
@@ -1589,13 +1589,13 @@ input, textarea {
     }
     .educationalvalue-icon-container-left {
         position: absolute;
-        top: 43.5%;
+        top: 38.8%;
         left: 0;
         z-index: 10;
     }
     .educationalvalue-icon-container-right {
         position: absolute;
-        top: 43.5%;
+        top: 38.8%;
         right: 0;
         z-index: 10;
     }
@@ -1604,7 +1604,7 @@ input, textarea {
         position: absolute;
         height: .25rem;
         width: 97%;
-        top: 49.5%;
+        top: 44%;
         left: 1.5%;
         opacity: 0.8;
     }
@@ -2583,13 +2583,13 @@ input, textarea {
     }
     .educationalvalue-icon-container-left {
         position: absolute;
-        top: 43.5%;
+        top: 38.8%;
         left: 0;
         z-index: 10;
     }
     .educationalvalue-icon-container-right {
         position: absolute;
-        top: 43.5%;
+        top: 38.8%;
         right: 0;
         z-index: 10;
     }
@@ -2598,7 +2598,7 @@ input, textarea {
         position: absolute;
         height: .25rem;
         width: 97%;
-        top: 49.5%;
+        top: 44%;
         left: 1.5%;
         opacity: 0.8;
     }
