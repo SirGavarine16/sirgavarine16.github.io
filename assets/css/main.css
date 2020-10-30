@@ -89,8 +89,102 @@ input, textarea {
     0% { opacity: 1; }
     100% {opacity: 0;}
 }
-
-
+@keyframes slideToShow {
+    0% { left: 100%; }
+    100% { left: 0%; }
+}
+@keyframes slideToHide {
+    0% { left: 0%; }
+    100% { left: 100%; }
+}
+@keyframes stepperToHide {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes stepperToShow {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes advanceSkillometer60{
+    0% { width: 0%; }
+    100% { width: 60%;}
+}
+@keyframes advanceSkillometer70{
+    0% { width: 0%; }
+    100% { width: 70%;}
+}
+@keyframes advanceSkillometer80{
+    0% { width: 0%; }
+    100% { width: 80%;}
+}
+@keyframes advanceSkillometer90{
+    0% { width: 0%; }
+    100% { width: 90%;}
+}
+@keyframes advanceSkillometerCard60{
+    0% {  left: 0%; }
+    100% { left: 52%;}
+}
+@keyframes advanceSkillometerCard70{
+    0% {  left: 0%; }
+    100% { left: 62%;}
+}
+@keyframes advanceSkillometerCard80{
+    0% {  left: 0%; }
+    100% { left: 72%;}
+}
+@keyframes advanceSkillometerCard90{
+    0% {  left: 0%; }
+    100% { left: 82%;}
+}
+@keyframes advanceCircle60 {
+    0% {
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        -webkit-transform: rotate(175deg);
+        -ms-transform: rotate(175deg);
+        transform: rotate(175deg);
+    }
+}
+@keyframes advanceCircle70 {
+    0% {
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        -webkit-transform: rotate(200deg);
+        -ms-transform: rotate(200deg);
+        transform: rotate(200deg);
+    }
+}
+@keyframes advanceCircle80 {
+    0% {
+        -webkit-transform: rotate(245deg);
+        -ms-transform: rotate(245deg);
+        transform: rotate(245deg);
+    }
+    100% {
+        -webkit-transform: rotate(275deg);
+        -ms-transform: rotate(275deg);
+        transform: rotate(275deg);
+    }
+}
+@keyframes advanceCircle90 {
+    0% {
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        -webkit-transform: rotate(175deg);
+        -ms-transform: rotate(175deg);
+        transform: rotate(175deg);
+    }
+}
 
 .section-title-separator  {
     background-color: #6c5ce7;
@@ -689,16 +783,20 @@ input, textarea {
         background-color:#2d3436;
     }
     .skillometer-line70 {
-        width: 70%;
+        width: 0%;
+        animation: advanceSkillometer70 0.8s forwards;
     }
     .skillometer-line80 {
-        width: 80%;
+        width: 0%;
+        animation: advanceSkillometer80 0.8s forwards;
     }
     .skillometer-line90 {
-        width: 90%;
+        width: 0%;
+        animation: advanceSkillometer90 0.8s forwards;
     }
     .skillometer-line60 {
-        width: 60%;
+        width: 0%;
+        animation: advanceSkillometer60 0.8s forwards;
     }
     .skillometer-card {
         position: absolute;
@@ -715,18 +813,21 @@ input, textarea {
         text-align: center;
     }
     .skillometer-card70 {
-        left: 62%;
+        left: 0%;
+        animation: advanceSkillometerCard70 0.8s forwards;
     }
     .skillometer-card80 {
-        left: 72%;
+        left: 0%;
+        animation: advanceSkillometerCard80 0.8s forwards;
     }
     .skillometer-card90 {
-        left: 82%;
+        left: 0%;
+        animation: advanceSkillometerCard90 0.8s forwards;
     }
     .skillometer-card60 {
-        left: 52%;
+        left: 0%;
+        animation: advanceSkillometerCard60 0.8s forwards;
     }
-    
     /*  EXPERTISE   */
     .expertise-container {
         width: 30%;
@@ -776,30 +877,25 @@ input, textarea {
         border: 10px solid transparent; 
         border-top: 10px solid #6c5ce7; 
         border-radius: 50%;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
     }
     .expertise60 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(175deg);
-        -ms-transform: rotate(175deg);
-        transform: rotate(175deg);
+        animation: advanceCircle60 0.8s forwards;
     }
     .expertise70 {
-        border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(200deg);
-        -ms-transform: rotate(200deg);
-        transform: rotate(200deg);
+        border-left: 10px solid #6c5ce7;
+        animation: advanceCircle70 0.8s forwards; 
     }
     .expertise80 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(245deg);
-        -ms-transform: rotate(245deg);
-        transform: rotate(245deg);
+        animation: advanceCircle80 0.8s forwards;
     }
     .expertise90 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(275deg);
-        -ms-transform: rotate(275deg);
-        transform: rotate(275deg);
+        animation: advanceCircle90 0.8s forwards;
     }
     .expertise-percent-container {
         display: flex;
@@ -992,15 +1088,60 @@ input, textarea {
     .testimonials-main-content{
         margin-top: 2rem;
         width: 100%;
+        height: 23rem;
         min-height: 2rem;
         display: flex;
-
+        overflow: hidden;
+        position: relative;
     }
     .testimonial-content {
         width: 75%;
         min-height: 2rem;
         padding: 1rem;
         position: relative;
+    }
+    .testimonial-container {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        display: flex;
+        z-index: 10;
+    }
+    .old-slide-step {
+        z-index: 15;
+    }
+    .testimonial-2 {
+        left: 100%;
+    }
+    .show-testimonial {
+        z-index: 20;
+        animation: slideToShow 1s;
+    }
+    .hide-testimonial {
+        animation: slideToHide 2s;
+    }
+    .hide-stepper {
+        animation: stepperToHide 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .show-stepper {
+        animation: stepperToShow 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .stepper-shown {
+        opacity: 1;
+    }
+    .stepper-hidden {
+        opacity: 0;
+    }
+    .testimonial-hidden {
+        left: 100%;
+    }
+    .testimonial-shown {
+        left: 0%;
     }
     .testimonial-desc {
         font-size: 1.25rem;
@@ -1683,16 +1824,20 @@ input, textarea {
         background-color:#2d3436;
     }
     .skillometer-line70 {
-        width: 70%;
+        width: 0%;
+        animation: advanceSkillometer70 0.8s forwards;
     }
     .skillometer-line80 {
-        width: 80%;
+        width: 0%;
+        animation: advanceSkillometer80 0.8s forwards;
     }
     .skillometer-line90 {
-        width: 90%;
+        width: 0%;
+        animation: advanceSkillometer90 0.8s forwards;
     }
     .skillometer-line60 {
-        width: 60%;
+        width: 0%;
+        animation: advanceSkillometer60 0.8s forwards;
     }
     .skillometer-card {
         position: absolute;
@@ -1709,18 +1854,21 @@ input, textarea {
         text-align: center;
     }
     .skillometer-card70 {
-        left: 62%;
+        left: 0%;
+        animation: advanceSkillometerCard70 0.8s forwards;
     }
     .skillometer-card80 {
-        left: 72%;
+        left: 0%;
+        animation: advanceSkillometerCard80 0.8s forwards;
     }
     .skillometer-card90 {
-        left: 82%;
+        left: 0%;
+        animation: advanceSkillometerCard90 0.8s forwards;
     }
     .skillometer-card60 {
-        left: 52%;
+        left: 0%;
+        animation: advanceSkillometerCard60 0.8s forwards;
     }
-    
     /*  EXPERTISE   */
     .expertise-container {
         width: 30%;
@@ -1770,30 +1918,25 @@ input, textarea {
         border: 10px solid transparent; 
         border-top: 10px solid #6c5ce7; 
         border-radius: 50%;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
     }
     .expertise60 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(175deg);
-        -ms-transform: rotate(175deg);
-        transform: rotate(175deg);
+        animation: advanceCircle60 0.8s forwards;
     }
     .expertise70 {
-        border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(200deg);
-        -ms-transform: rotate(200deg);
-        transform: rotate(200deg);
+        border-left: 10px solid #6c5ce7;
+        animation: advanceCircle70 0.8s forwards; 
     }
     .expertise80 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(245deg);
-        -ms-transform: rotate(245deg);
-        transform: rotate(245deg);
+        animation: advanceCircle80 0.8s forwards;
     }
     .expertise90 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(275deg);
-        -ms-transform: rotate(275deg);
-        transform: rotate(275deg);
+        animation: advanceCircle90 0.8s forwards;
     }
     .expertise-percent-container {
         display: flex;
@@ -1986,15 +2129,60 @@ input, textarea {
     .testimonials-main-content{
         margin-top: 2rem;
         width: 100%;
+        height: 23rem;
         min-height: 2rem;
         display: flex;
-
+        overflow: hidden;
+        position: relative;
     }
     .testimonial-content {
         width: 75%;
         min-height: 2rem;
         padding: 1rem;
         position: relative;
+    }
+    .testimonial-container {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        display: flex;
+        z-index: 10;
+    }
+    .old-slide-step {
+        z-index: 15;
+    }
+    .testimonial-2 {
+        left: 100%;
+    }
+    .show-testimonial {
+        z-index: 20;
+        animation: slideToShow 1s;
+    }
+    .hide-testimonial {
+        animation: slideToHide 2s;
+    }
+    .hide-stepper {
+        animation: stepperToHide 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .show-stepper {
+        animation: stepperToShow 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .stepper-shown {
+        opacity: 1;
+    }
+    .stepper-hidden {
+        opacity: 0;
+    }
+    .testimonial-hidden {
+        left: 100%;
+    }
+    .testimonial-shown {
+        left: 0%;
     }
     .testimonial-desc {
         font-size: 1.25rem;
@@ -2677,16 +2865,20 @@ input, textarea {
         background-color:#2d3436;
     }
     .skillometer-line70 {
-        width: 70%;
+        width: 0%;
+        animation: advanceSkillometer70 0.8s forwards;
     }
     .skillometer-line80 {
-        width: 80%;
+        width: 0%;
+        animation: advanceSkillometer80 0.8s forwards;
     }
     .skillometer-line90 {
-        width: 90%;
+        width: 0%;
+        animation: advanceSkillometer90 0.8s forwards;
     }
     .skillometer-line60 {
-        width: 60%;
+        width: 0%;
+        animation: advanceSkillometer60 0.8s forwards;
     }
     .skillometer-card {
         position: absolute;
@@ -2703,18 +2895,21 @@ input, textarea {
         text-align: center;
     }
     .skillometer-card70 {
-        left: 62%;
+        left: 0%;
+        animation: advanceSkillometerCard70 0.8s forwards;
     }
     .skillometer-card80 {
-        left: 72%;
+        left: 0%;
+        animation: advanceSkillometerCard80 0.8s forwards;
     }
     .skillometer-card90 {
-        left: 82%;
+        left: 0%;
+        animation: advanceSkillometerCard90 0.8s forwards;
     }
     .skillometer-card60 {
-        left: 52%;
+        left: 0%;
+        animation: advanceSkillometerCard60 0.8s forwards;
     }
-    
     /*  EXPERTISE   */
     .expertise-container {
         width: 30%;
@@ -2764,30 +2959,25 @@ input, textarea {
         border: 10px solid transparent; 
         border-top: 10px solid #6c5ce7; 
         border-radius: 50%;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
     }
     .expertise60 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(175deg);
-        -ms-transform: rotate(175deg);
-        transform: rotate(175deg);
+        animation: advanceCircle60 0.8s forwards;
     }
     .expertise70 {
-        border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(200deg);
-        -ms-transform: rotate(200deg);
-        transform: rotate(200deg);
+        border-left: 10px solid #6c5ce7;
+        animation: advanceCircle70 0.8s forwards; 
     }
     .expertise80 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(245deg);
-        -ms-transform: rotate(245deg);
-        transform: rotate(245deg);
+        animation: advanceCircle80 0.8s forwards;
     }
     .expertise90 {
         border-left: 10px solid #6c5ce7; 
-        -webkit-transform: rotate(275deg);
-        -ms-transform: rotate(275deg);
-        transform: rotate(275deg);
+        animation: advanceCircle90 0.8s forwards;
     }
     .expertise-percent-container {
         display: flex;
@@ -2980,15 +3170,60 @@ input, textarea {
     .testimonials-main-content{
         margin-top: 2rem;
         width: 100%;
+        height: 23rem;
         min-height: 2rem;
         display: flex;
-
+        overflow: hidden;
+        position: relative;
     }
     .testimonial-content {
         width: 75%;
         min-height: 2rem;
         padding: 1rem;
         position: relative;
+    }
+    .testimonial-container {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        display: flex;
+        z-index: 10;
+    }
+    .old-slide-step {
+        z-index: 15;
+    }
+    .testimonial-2 {
+        left: 100%;
+    }
+    .show-testimonial {
+        z-index: 20;
+        animation: slideToShow 1s;
+    }
+    .hide-testimonial {
+        animation: slideToHide 2s;
+    }
+    .hide-stepper {
+        animation: stepperToHide 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .show-stepper {
+        animation: stepperToShow 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .stepper-shown {
+        opacity: 1;
+    }
+    .stepper-hidden {
+        opacity: 0;
+    }
+    .testimonial-hidden {
+        left: 100%;
+    }
+    .testimonial-shown {
+        left: 0%;
     }
     .testimonial-desc {
         font-size: 1.25rem;
