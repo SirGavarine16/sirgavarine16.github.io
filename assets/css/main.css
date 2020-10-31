@@ -163,14 +163,14 @@ input, textarea {
 }
 @keyframes advanceCircle80 {
     0% {
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
         -webkit-transform: rotate(245deg);
         -ms-transform: rotate(245deg);
         transform: rotate(245deg);
-    }
-    100% {
-        -webkit-transform: rotate(275deg);
-        -ms-transform: rotate(275deg);
-        transform: rotate(275deg);
     }
 }
 @keyframes advanceCircle90 {
@@ -180,9 +180,9 @@ input, textarea {
         transform: rotate(135deg);
     }
     100% {
-        -webkit-transform: rotate(175deg);
-        -ms-transform: rotate(175deg);
-        transform: rotate(175deg);
+        -webkit-transform: rotate(275deg);
+        -ms-transform: rotate(275deg);
+        transform: rotate(275deg);
     }
 }
 
