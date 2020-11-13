@@ -4,837 +4,1017 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css?v=0.0.1">
-    <title>De la Cruz - Creative Resume/CV Theme</title>
+    <link rel="stylesheet" href="./assets/css/main.css?v=0.0.2">
+    <title>Genshin Impact</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--    LOADER      -->
-    <div id="spinner-loader" class="loader-container">
-        <div class="loader"></div>
-    </div>
-    <!--    END LOADER  -->
-    <!--    SIDE BAR LEFT           -->
-    <div class='sidebar-container'>
-        <div class="sidebar-content">
-            <div class="sidebar-logo-container">
-                <img src="./assets/img/logo-1.png" alt='Inferno.' class="sidebar-logo-img" />
-            </div>
-            <div class="sidebar-nav-container">
-                <nav class="sidebar-nav">
-                    <ul class="sidebar-nav-list">
-                        <li><a href="#home">Home<div id='li_home' class="sidebar-selected"></div></a></li>
-                        <li><a href="#aboutme">About Me<div id='li_about' class="sidebar-selected sidebar-inactive">
-                                </div></a></li>
-                        <li><a href="#resume">Resume<div id='li_resume' class="sidebar-selected sidebar-inactive"></div>
-                            </a></li>
-                        <li><a href="#skills">Skills<div id='li_skills' class="sidebar-selected sidebar-inactive"></div>
-                            </a></li>
-                        <li><a href="#portfolio">Portfolio<div id='li_portfolio'
-                                    class="sidebar-selected sidebar-inactive"></div></a></li>
-                        <li><a href="#testimonials">Testimonials<div id='li_testimonials'
-                                    class="sidebar-selected sidebar-inactive"></div></a></li>
-                        <li><a href="#contact">Contact<div id='li_contact' class="sidebar-selected sidebar-inactive">
-                                </div></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="sidebar-footer-container">
-                <p>© Daniel De la Cruz.</p>
-                <p>All rights reserved 2020.</p>
-            </div>
-        </div>
-    </div>
-    <!--   END SIDE BAR LEFT        -->
-    <!--   MAIN PAGE CONTENT        -->
-    <div class="main-content-container">
-        <!--    HOME SECTION    -->
-        <div id="home" class="home-content-container">
-            <div class="home-bg-opacity"></div>
-            <div class="home-card-container">
-                <div class="home-card-status">
-                    ON SADNESS
+    <div class="page-content-container">
+        <div class="upper-page-content">
+            <!--    SHOP CART ICON                  -->
+            <div class="shopcart-icon-container">
+                <img src="./assets/img/cart-outline.png" alt="Shop cart">
+                <div class="shopcart-tooltip-container">
+                    No products in the cart.
+                    <div class="tooltip-pointer-top"></div>
                 </div>
-                <div class="home-card-content">
-                    <div class="home-card-img-container">
-                        <img src="./assets/img/pic-1.jpg" alt='Admin pic' class="home-card-img" />
+            </div>
+            <!--    END SHOP CART ICON              -->
+            <!--    TOP INFO BAR                    -->
+            <div class="topinfobar-content-container">
+                <div>
+                    <p class="topinfo-fontsize">Step into a vast world magical of adventure!</p>
+                </div>
+                <div>
+                    <a href="#" class="topinfo-text topinfo-fontsize">Learn more </a>
+                    <span class="topinfobar-divider"></span>
+                    <a href="#" class="topinfo-text topinfo-fontsize">Get a good start</a>
+                    <span class="topinfobar-divider"></span>
+                    <a href="#" class="topinfo-text-active topinfo-fontsize">Contact us at 515 5111 5515</a>
+                </div>
+            </div>
+            <!--    END TOP INFO BAR                -->
+            <!--    WELCOMING DIV                   -->
+            <div class="welcomediv-content-container master-container ">
+                <div class="welcomediv-header ">
+                    <div class="welcomediv-header-logo">
+                        <img src="./assets/img/logo.png" alt="Genshin Impact Logo" class="header-logo">
                     </div>
-                    <div class="home-card-desc-container">
-                        <div class="home-card-desc-title">
-                            <h1 class="home-card-h">I'M DANIEL DE LA CRUZ</h1>
-                            <h2 class="home-card-h">An independent jack of all trades and monochrome closet weaboo from
-                                La Paz, Mexico.</h2>
+                    <div class="welcomediv-header-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <div class="nav-divider"></div>
+                            </li>
+                            <li><a href="#features">Features</a></li>
+                            <li>
+                                <div class="nav-divider"></div>
+                            </li>
+                            <li><a href="#elements">Elements</a></li>
+                            <li>
+                                <div class="nav-divider"></div>
+                            </li>
+                            <li><a href="#characters">Characters</a></li>
+                            <li>
+                                <div class="nav-divider"></div>
+                            </li>
+                            <li><a href="#shop">Shop</a></li>
+                            <li>
+                                <div class="nav-divider"></div>
+                            </li>
+                            <li><a href="#events">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="welcomediv-mssg">
+                    <h1>Welcome to teyvat</h1>
+                    <h2>Travel across a magical realm of diverse cultures and kingdoms</h2>
+                    <a href="#" class="welcomediv-btn">Start now</a>
+                </div>
+            </div>
+            <!--    END WELCOMING DIV                -->
+            <!--    FEATURES OF GAME SECTION         -->
+            <div id='features' class="features-content-container master-container">
+                <div class="feature-title section-title-container">
+                    <div class="section-title-content">
+                        <h1>GAME FEATURES</h1>
+                        <div class="section-title-divider"></div>
+                        <p>
+                            You have arrived in Teyvat — a fantasy world where the seven elements flow and converge.
+                            Find
+                            out
+                            what this adventure has to offer as you dive deep in this new experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-main-container container">
+                    <div class="featurelist list-right">
+                        <ul>
+                            <li class="features-item">
+                                <div>
+                                    <h2>Explore a vast fantasy world</h2>
+                                    <p>
+                                        Fly across the open world, swim through crystaline waters, and climb towering
+                                        mountains.
+                                    </p>
+                                </div>
+                                <div class="features-item-icon icontype-1">
+                                    <div class="features-item-icon-border icontype-1"></div>
+                                    <img src="./assets/img/web.png" alt="World Icon" class="features-img">
+                                </div>
+                            </li>
+                            <li class="features-item">
+                                <div>
+                                    <h2>Master the seven elements</h2>
+                                    <p>
+                                        Manipulating the various elements is the key to defeating powerful enemies and
+                                        solving challenging puzzles.
+                                    </p>
+                                </div>
+                                <div class="features-item-icon icontype-2">
+                                    <div class="features-item-icon-border icontype-2"></div>
+                                    <img src="./assets/img/fire.png" alt="Fire Icon" class="features-img">
+                                </div>
+                            </li>
+                            <li class="features-item">
+                                <div>
+                                    <h2>Experience a magic adventure</h2>
+                                    <p>
+                                        You will embark on a journey to reunite with your long-lost sibling and unravel
+                                        the
+                                        mysteries of Teyvat, and yourself.
+                                    </p>
+                                </div>
+                                <div class="features-item-icon icontype-3">
+                                    <div class="features-item-icon-border icontype-3"></div>
+                                    <img src="./assets/img/script-text-outline.png" alt="Fire Icon"
+                                        class="features-img">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="features-center">
+                        <img src="./assets/img/diluc-1.png" alt="Welcoming by Amber" class="features-main-img">
+                    </div>
+                    <div class="featurelist list-left">
+                        <ul>
+                            <li class="features-item">
+                                <div class="features-item-icon icontype-4">
+                                    <div class="features-item-icon-border icontype-4"></div>
+                                    <img src="./assets/img/sword-cross.png" alt="Sword crossing" class="features-img">
+                                </div>
+                                <div>
+                                    <h2>Fight evil across Teyvat</h2>
+                                    <p>
+                                        Charge head-on into battles against dangerous monsters, use weapons and
+                                        habilities
+                                        within your reach to defeat the shadows that threaten the world.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="features-item">
+                                <div class="features-item-icon icontype-5">
+                                    <div class="features-item-icon-border icontype-5"></div>
+                                    <img src="./assets/img/shield.png" alt="Shield Icon" class="features-img">
+                                </div>
+                                <div>
+                                    <h2>Unite and defeat</h2>
+                                    <p>
+                                        Join forces with friends and together face all the dangers that await in Teyvat.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="features-item">
+                                <div class="features-item-icon icontype-6">
+                                    <div class="features-item-icon-border icontype-6"></div>
+                                    <img src="./assets/img/sack.png" alt="Sack Icon" class="features-img">
+                                </div>
+                                <div>
+                                    <h2>Collect and win</h2>
+                                    <p>
+                                        Collect characters, weapons and items that expand your knowledge of the world
+                                        you
+                                        are now trapped in.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--    END FEATURES OF GAME SECTION     -->
+            <!--    ACTION CALL SECTION              -->
+            <div class="actioncall-content-container master-container">
+                <div class="actioncall-content container">
+                    <h1>Pick up your sword and start your own adventure now</h1>
+                    <a href="#" class="actioncall-btn">
+                        <img src="./assets/img/gamepad-variant-outline-black.png" alt="Game controller icon"
+                            class="icon-24 btn-icon icon-hovered">
+                        <img src="./assets/img/gamepad-variant-outline.png" alt="Game controller icon"
+                            class="icon-24 btn-icon icon-active">
+                        Play now
+                    </a>
+                </div>
+            </div>
+            <!--    END ACTION CALL SECTION          -->
+            <!--    ELEMENTS LIST SECTION            -->
+            <div id="elements" class="elements-content-container master-container">
+                <div class="elements-title section-title-container">
+                    <div class="section-title-content">
+                        <h1>Elements</h1>
+                        <div class="section-title-divider"></div>
+                        <p>
+                            Every character is defined by its vision, a mysterious artifact that allows its user to
+                            connect
+                            with elemental energies.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="elements-main-content-container ">
+                        <div class="elements-row">
+                            <div class="element-item">
+                                <div class="element-item-img-container element-pyro">
+                                    <img src="./assets/img/pyro_200.png" alt="Pyro Symbol" class="element-item-img">
+                                    <div class="element-item-hovered">
+                                        <a href="#" class="element-item-hovered-circle">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Pyro</h2>
+                                </div>
+                            </div>
+                            <div class="element-item">
+                                <div class="element-item-img-container element-anemo">
+                                    <img src="./assets/img/anemo_200.png" alt="Anemo Symbol" class="element-item-img">
+                                    <div class="element-item-hovered">
+                                        <a href="#" class="element-item-hovered-circle">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Anemo</h2>
+                                </div>
+                            </div>
+                            <div class="element-item">
+                                <div class="element-item-img-container element-electro">
+                                    <img src="./assets/img/electro_200.png" alt="Electro Symbol"
+                                        class="element-item-img">
+                                    <div class="element-item-hovered">
+                                        <a href="#" class="element-item-hovered-circle">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Electro</h2>
+                                </div>
+                            </div>
                         </div>
-                        <div class="home-card-desc-attr">
-                            <ul>
-                                <li>
-                                    <span class="home-card-main-attr">Full name:</span>
-                                    <span class="home-card-desc-attr">Daniel De la Cruz Gavarain</span>
-                                </li>
-                                <li>
-                                    <span class="home-card-main-attr">Age:</span>
-                                    <span class="home-card-desc-attr">20</span>
-                                </li>
-                                <li>
-                                    <span class="home-card-main-attr">Nationality:</span>
-                                    <span class="home-card-desc-attr">Mexican</span>
-                                </li>
-                                <li>
-                                    <span class="home-card-main-attr">Address:</span>
-                                    <span class="home-card-desc-attr">Why do you want to know?</span>
-                                </li>
-                                <li>
-                                    <span class="home-card-main-attr">E-mail:</span>
-                                    <span class="home-card-desc-attr">ddelacruz_18@alu.uabcs.mx</span>
-                                </li>
-                                <li>
-                                    <span class="home-card-main-attr">Phone:</span>
-                                    <span class="home-card-desc-attr">Treat me with a dinner first</span>
-                                </li>
-                                <li>
-                                    <span class="home-card-main-attr">My interests:</span>
-                                    <span class="home-card-desc-attr">Books, manga and technology</span>
-                                </li>
-                                <li>
-                                    <span class="home-card-main-attr">Quote:</span>
-                                    <span class="home-card-desc-attr">Per Aspera Ad Astra</span>
-                                </li>
-                            </ul>
-                            <a href="#aboutme" class="home-card-btn">
-                                Full bio here
-                            </a>
+                        <div class="elements-row">
+                            <div class="element-item">
+                                <div class="element-item-img-container element-cryo">
+                                    <img src="./assets/img/cryo_200.png" alt="Cryo Symbol" class="element-item-img">
+                                    <div class="element-item-hovered">
+                                        <a href="#" class="element-item-hovered-circle">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Cryo</h2>
+                                </div>
+                            </div>
+                            <div class="element-item">
+                                <div class="element-item-img-container element-geo">
+                                    <img src="./assets/img/geo_200.png" alt="Geo Symbol" class="element-item-img">
+                                    <div class="element-item-hovered">
+                                        <a href="#" class="element-item-hovered-circle">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Geo</h2>
+                                </div>
+                            </div>
+                            <div class="element-item">
+                                <div class="element-item-img-container element-hydro">
+                                    <img src="./assets/img/hydro_200.png" alt="Hydro Symbol" class="element-item-img">
+                                    <div class="element-item-hovered">
+                                        <a href="#" class="element-item-hovered-circle">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Hydro</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elements-row-final">
+                            <div class="element-item">
+                                <div class="element-item-img-container element-dendro">
+                                    <img src="./assets/img/dendro_200.png" alt="Dendro Symbol" class="element-item-img">
+                                    <div class="element-item-hovered">
+                                        <a href="#" class="element-item-hovered-circle">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Dendro</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="home-card-footer">
-                    <ul class="home-card-social-list">
-                        <li>
-                            <a href="#" class="hm-social-a"><img src="./assets/img/facebook.png" alt="Social Icon"
-                                    class="home-card-social-icon hm-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="hm-social-a"><img src="./assets/img/twitter.png" alt="Social Icon"
-                                    class="home-card-social-icon hm-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="hm-social-a"><img src="./assets/img/reddit.png" alt="Social Icon"
-                                    class="home-card-social-icon hm-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="hm-social-a"><img src="./assets/img/google-plus.png" alt="Social Icon"
-                                    class="home-card-social-icon hm-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#"  class="hm-social-a"><img src="./assets/img/youtube.png" alt="Social Icon"
-                                    class="home-card-social-icon hm-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="hm-social-a"><img src="./assets/img/linkedin.png" alt="Social Icon"
-                                    class="home-card-social-icon hm-social-icon"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--    END HOME SECTION    -->
-        <!--    ABOUT ME SECTION    -->
-        <div id='aboutme' class="aboutme-content container">
-            <div class="aboutme title-container">
-                <h1>ABOUT ME</h1>
-                <h2>Just another smartass willing to do anything to win</h2>
-                <span class="section-title-separator"></span>
-            </div>
-            <div class="aboutme-desc-container">
-                <div class="row aboutme-desc-p">
-                    <p>I'm Daniel, a trying-to-be full stack developer born in La Paz, Mexico. Currently studying a
-                        bachelor's degree in
-                        Software Development Engineering at the Autonomous University of Baja California Sur, and I'm a
-                        proud wild cat.
-                    </p>
-                    <p>But the fun does not end when it comes to other applications, I have also studied Python, a bit
-                        of C#, C++ and Java,
-                        I have also tried developing API Rest with NodeJS and Express.
-                    </p>
-                </div>
-                <div class="row aboutme-desc-p">
-                    <p>As still a student, I'm trying to get involved in as much software projects as I can. So far,
-                        I've been worked with
-                        the development of web apps and android apps using React and React Native.
-                    </p>
-                    <p>My main goal to achieve is to reach San Francisco and work as a developer for some big company.
-                        But this journey is all about learning, and it's amazing what you can do with a computer.
-                    </p>
-                </div>
-            </div>
-            <div class="aboutme-footer">
-                <img src="./assets/img/signature.png" alt="Signature">
-                <a href="#" class="aboutme-footer-btn">
-                    DOWNLOAD RESUME &nbsp;
-                    <img src="./assets/img/download.png" alt='Download' class="aboutme-footer-btn-icon">
-                </a>
-            </div>
-        </div>
-        <!--    END ABOUT ME SECTION    -->
-        <!--    TIME LINE SECTION       -->
-        <div id='resume' class="timeline-content-container container">
-            <div class="timeline title-container">
-                <h1>5 Years Experience</h1>
-                <h2>And i am just getting started</h2>
-                <span class="section-title-separator"></span>
-            </div>
-            <div class="timeline-main-content-container">
-                <div class="timeline-start-container">
-                    GRADUATED FROM CBTIS 230 HIGH SCHOOL
-                    <div class="timeline-div-triangle"></div>
-                    <div class="timeline-school-icon-container">
-                        <img src="./assets/img/school.png" alt="">
-                    </div>
-                </div>
-                <div class="timeline-container">
-                    <div class="timeline-card-container time-card-container-sp">
-                        <p class="card-subtitle">Micro-controllers at its best.</p>
-                        <h4 class="card-title">ARDUINO</h4>
-                        <p class="timeline-card-desc">As part of my High School branch, I learnt about electronics and
-                            how to do awesome things with Arduino.
-                        </p>
-                        <div class="timeline-div-triangle"></div>
-                        <div class="timeline-picker1"></div>
-                    </div>
-                    <div class="timeline-card-icon-container1">
-                        <img src="./assets/img/bullseye.png" alt="Target">
-                    </div>
-                    <div class="timeline-card-date">
-                        2015 - 2018
-                    </div>
-                </div>
-                <div class="timeline-container timeline-card-type2">
-                    <div class="card-date">
-                        2016 - 2018
-                    </div>
-                    <div class="timeline-card-icon-container2">
-                        <img src="./assets/img/bullseye.png" alt="Target">
-                    </div>
-                    <div class="timeline-card-container ">
-                        <p class="card-subtitle">Where it all started.</p>
-                        <h4 class="card-title">C++</h4>
-                        <p class="timeline-card-desc">
-                            While I was still studying Arduino I was interested in learning more about programming
-                            languages,
-                            so when I asked, Google told me that a good language to start was C++.
-                        </p>
-                        <div class="timeline-div-triangle"></div>
-                        <div class="timeline-picker2"></div>
-                    </div>
-                </div>
-                <div class="timeline-container">
-                    <div class="timeline-card-container">
-                        <p class="card-subtitle">And there goes another one.</p>
-                        <h4 class="card-title">Python</h4>
-                        <p class="timeline-card-desc">
-                            One day while I was at the Uni, I asked my professor what programming language should I
-                            learn and he
-                            suggested me Python, and once holidays kicked in, I decided to take a course of it.
-                        </p>
-                        <div class="timeline-div-triangle"></div>
-                        <div class="timeline-picker1"></div>
-                    </div>
-                    <div class="timeline-card-icon-container1">
-                        <img src="./assets/img/bullseye.png" alt="Target">
-                    </div>
-                    <div class="timeline-card-date">
-                        2018 - 2019
-                    </div>
-                </div>
-                <div class="timeline-container timeline-card-type2">
-                    <div class="timeline-card-date">
-                        2020 - Present
-                    </div>
-                    <div class="timeline-card-icon-container2">
-                        <img src="./assets/img/bullseye.png" alt="Target">
-                    </div>
-                    <div class="timeline-card-container ">
-                        <p class="card-subtitle">Web development at its best.</p>
-                        <h4 class="card-title">HTML, CSS & JavaScript</h4>
-                        <p class="timeline-card-desc">
-                            When the 2020 started I got a job as web developer for a local company, while I was
-                            preparing
-                            for the job I learnt HTML5, JavaScript, JQuery and React, and I'm still learning CSS.
-                        </p>
-                        <div class="timeline-div-triangle"></div>
-                        <div class="timeline-picker2"></div>
-                    </div>
-                </div>
-                <div class="timeline-line"></div>
-                <div class="timeline-line-end-icon">
-                    <img src="./assets/img/timeline-end.png" alt="">
-                </div>
-            </div>
-        </div>
-        <!--    END TIME LINE SECTION       -->
-        <!--    EDUCATIONAL SECTION         -->
-        <div class="education-container container">
-            <div class="education title-container">
-                <h1>Educational Value</h1>
-                <h2>Knowledge is power</h2>
-                <span class="section-title-separator"></span>
-            </div>
-            <div class="educationalvalue-main-container">
-                <div class="educationalvalue-icon-container-left">
-                    <img src="./assets/img/chevron-left.png" alt="">
                 </div>
 
-                <div class="educationalvalue-step-container1">
-                    <div class="educationalvalue-card">
-                        <p class="card-subtitle">Electronics and stuff.</p>
-                        <h4 class="card-title">CBTIS #230</h4>
-                        <div class="timeline-div-triangle"></div>
-                        <div class="education-picker1"></div>
+            </div>
+            <!--    END ELEMENTS LIST SECTION        -->
+            <!--    QUOTE SLIDER SECTION             -->
+            <div class="quoteslider-content-container master-container">
+                <div class="quoteslider-opacity-div"></div>
+                <div class="quoteslider-content container">
+                    <div class="arrow-container arrow-left">
+                        <img src="./assets/img/chevron-left.png" alt="Arror left">
                     </div>
-                    <div class="educationalvalue-icon-container1">
-                        <img src="./assets/img/bullseye.png" alt="Target">
+                    <div class="arrow-container arrow-right">
+                        <img src="./assets/img/chevron-right.png" alt="Arrow right">
                     </div>
-                    <div class="educationalvalue-date card-date">
-                        2015 - 2018
+                    <div class="quoteslider-title section-title-container">
+                        <div class="section-title-content">
+                            <img src="./assets/img/logo.png" alt="Genshin Impact" class="quoteslider-img">
+                        </div>
                     </div>
-                </div>
-                <div class="educationalvalue-step-container2">
-                    <div class="educationalvalue-card">
-                        <p class="card-subtitle">To learn other languages is to learn other cultures.</p>
-                        <h4 class="card-title">LANGUAGE DEPARTMENT, UABCS</h4>
-                        <div class="timeline-div-triangle"></div>
-                        <div class="education-picker2"></div>
+                    <div class="quoteslider-main-content">
+                        <p class="quotep">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat necessitatibus corrupti
+                            totam
+                            quo id dolores eligendi aspernatur tempora modi amet, quidem consectetur adipisci vitae ex
+                            voluptate quod repellat reprehenderit aut ea animi? Error, dolorum. Voluptas praesentium,
+                            quaerat at ut dolore porro quidem? Veniam placeat suscipit obcaecati voluptatibus provident
+                            id
+                            rem iure aperiam.
+                        </p>
+                        <p class="quotep quote-author">
+                            Eren Jaeger
+                        </p>
+                        <p class="quotep quote-rol">
+                            Producer
+                        </p>
                     </div>
-                    <div class="educationalvalue-icon-container2">
-                        <img src="./assets/img/bullseye.png" alt="Target">
-                    </div>
-                    <div class="educationalvalue-date2 card-date">
-                        2016 - 2017
-                    </div>
-                </div>
-                <div class="educationalvalue-step-container1">
-                    <div class="educationalvalue-card">
-                        <p class="card-subtitle">Hopefully this soon will be over.</p>
-                        <h4 class="card-title">UABCS</h4>
-                        <div class="timeline-div-triangle"></div>
-                        <div class="education-picker1"></div>
-                    </div>
-                    <div class="educationalvalue-icon-container1">
-                        <img src="./assets/img/bullseye.png" alt="Target">
-                    </div>
-                    <div class="educationalvalue-date card-date">
-                        2018 - Present
-                    </div>
-                </div>
-                <div class="educationalvalue-line"></div>
-                <div class="educationalvalue-icon-container-right">
-                    <img src="./assets/img/chevron-right.png" alt="">
                 </div>
             </div>
+            <!--    END QUOTE SLIDER SECTION         -->
+            <!--    DATATABLE SECTION                -->
+            <div id='characters' class="datatable-content-container master-container">
+                <div class="datatable-content container">
+                    <div class="datatable-title section-title-container">
+                        <div class="section-title-content">
+                            <h1>Characters table</h1>
+                            <div class="section-title-divider"></div>
+                        </div>
+                    </div>
+                    <div class="datatable-selector">
+                        <ul class="datatable-selector-list">
+                            <li><a href="#">
+                                    <h2>All Characters</h2>
+                                </a></li>
+                            <li class="datatable-selector-list-inactive"><a href="#">
+                                    <h2>Attack Characters</h2>
+                                </a></li>
+                            <li class="datatable-selector-list-inactive"><a href="#">
+                                    <h2>Defensive Characters</h2>
+                                </a></li>
+                            <li class="datatable-selector-list-inactive"><a href="#">
+                                    <h2>Hybrid Characters</h2>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="datatable-main-content-container">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td>PYRO</td>
+                                <td>ANEMO</td>
+                                <td>ELECTRO</td>
+                                <td>CRYO</td>
+                                <td>GEO</td>
+                                <td>HYDRO</td>
+                                <td>DENDRO</td>
+                            </tr>
+                            <tr>
+                                <td>ARCHER</td>
+                                <td class="table-cell-container amber-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-pyro ">
+                                        Amber
+                                        <p>The Outrider</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-pyro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-pyro"></div>
+                                    <div class="table-cell-content">
+                                        Amber
+                                        <p>The Outrider</p>
+                                    </div>
+                                </td>
+                                <td class="table-cell-container venti-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-anemo ">
+                                        Venti
+                                        <p>The Bard</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-anemo"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-anemo"></div>
+                                    <div class="table-cell-content">
+                                        Venti
+                                        <p>The Bard</p>
+                                    </div>
+                                </td>
+                                <td class="table-cell-container fischl-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-electro ">
+                                        Fischl
+                                        <p>The Princess</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-electro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-electro"></div>
+                                    <div class="table-cell-content">
+                                        Fischl
+                                        <p>The Princess</p>
+                                    </div>
+                                </td>
+                                <td class="table-cell-container diona-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-cryo ">
+                                        Diona
+                                        <p>The Wine Slayer</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-cryo"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-cryo"></div>
+                                    <div class="table-cell-content">
+                                        Diona
+                                        <p>The Wine Slayer</p>
+                                    </div>
+                                </td>
+                                <td class="table-cell-container ">
+                                    <div class="table-cell-bg"></div>
+                                    <div class="table-cell-content table-cell-empty">
+                                        Coming soon
+                                    </div>
+                                </td>
+                                <td class="table-cell-container tartaglia-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-hydro ">
+                                        Tartaglia
+                                        <p>The Fatui Spy</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-hydro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-hydro"></div>
+                                    <div class="table-cell-content">
+                                        Tartaglia
+                                        <p>The Fatui Spy</p>
+                                    </div>
+                                </td>
+                                <td class="table-cell-container ">
+                                    <div class="table-cell-bg"></div>
+                                    <div class="table-cell-content table-cell-empty">
+                                        Coming soon
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>LANCER</td>
+                                <td class="table-cell-container xianling-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-pyro ">
+                                        Xianling
+                                        <p>The Chef</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-pyro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-pyro"></div>
+                                    <div class="table-cell-content">
+                                        Xianling
+                                        <p>The Chef</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="table-cell-container keqing-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-electro ">
+                                        Keqing
+                                        <p>The Protector</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-electro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-electro"></div>
+                                    <div class="table-cell-content">
+                                        Keqing
+                                        <p>The Protector</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="table-cell-container noelle-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-geo ">
+                                        Noelle
+                                        <p>The Maid</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-geo"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-geo"></div>
+                                    <div class="table-cell-content">
+                                        Noelle
+                                        <p>The Maid</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="table-cell-container ">
+                                    <div class="table-cell-bg"></div>
+                                    <div class="table-cell-content table-cell-empty">
+                                        Coming soon
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>WARRIOR</td>
+                                <td class="table-cell-container bennet-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-pyro ">
+                                        Bennet
+                                        <p>The Explorer</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-pyro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-pyro"></div>
+                                    <div class="table-cell-content">
+                                        Bennet
+                                        <p>The Explorer</p>
+                                    </div>
+                                </td>
+                                <td class="table-cell-container jean-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-anemo ">
+                                        Jean
+                                        <p>The Grand Master</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-anemo"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-anemo"></div>
+                                    <div class="table-cell-content">
+                                        Jean
+                                        <p>The Grand Master</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="table-cell-container kaeya-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-cryo ">
+                                        Kaeya
+                                        <p>The Knight</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-cryo"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-cryo"></div>
+                                    <div class="table-cell-content">
+                                        Kaeya
+                                        <p>The Knight</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="table-cell-container xingqiu-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-hydro ">
+                                        Xingqiu
+                                        <p>The Businessman</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-hydro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-hydro"></div>
+                                    <div class="table-cell-content">
+                                        Xingqiu
+                                        <p>The Businessman</p>
+                                    </div>
+                                </td>
+                                <td class="table-cell-container ">
+                                    <div class="table-cell-bg"></div>
+                                    <div class="table-cell-content table-cell-empty">
+                                        Coming soon
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MAGE</td>
+                                <td class="table-cell-container klee-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-pyro ">
+                                        Klee
+                                        <p>The Spark</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-pyro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-pyro"></div>
+                                    <div class="table-cell-content">
+                                        Klee
+                                        <p>The Spark</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="table-cell-container lisa-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-electro ">
+                                        Lisa
+                                        <p>The Librarian</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-electro"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-electro"></div>
+                                    <div class="table-cell-content">
+                                        Lisa
+                                        <p>The Librarian</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="table-cell-container ningguang-cell">
+                                    <div class="table-cell-tooltip table-cell-bg-geo ">
+                                        Ningguang
+                                        <p>The Genius</p>
+                                        <div class="tooltip-pointer-bot table-cell-bg-geo"></div>
+                                    </div>
+                                    <div class="table-cell-bg table-cell-bg-geo"></div>
+                                    <div class="table-cell-content">
+                                        Ningguang
+                                        <p>The Genius</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="table-cell-container ">
+                                    <div class="table-cell-bg"></div>
+                                    <div class="table-cell-content table-cell-empty">
+                                        Coming soon
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--    END DATATABLE SECTION            -->
+            <!--    BIOGRAPHY SECTION                -->
+            <div class="biography-content-container master-container">
+                <div class="bio-main-content container">
+                    <div class="bio-img-container">
+                        <img src="./assets/img/geo.jpg" alt="Ningguang" class="bio-img">
+                    </div>
+                    <div class="bio-contactdata-container">
+                        <h3>Levi Ackerman</h3>
+                        <p>Dev Team leader</p>
+                        <ul class="bio-socialmedia-list">
+                            <li><img src="./assets/img/facebook.png" alt=""></li>
+                            <li><img src="./assets/img/google-plus.png" alt=""></li>
+                            <li><img src="./assets/img/reddit.png" alt=""></li>
+                            <li><img src="./assets/img/twitter.png" alt=""></li>
+                            <li><img src="./assets/img/youtube.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="bio-desc-container">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti, quo dicta dolorem
+                            sapiente
+                            sed quidem voluptatibus itaque suscipit exercitationem culpa natus quae quos nam explicabo
+                            magni
+                            rem nisi odio. Hic alias quo doloribus. Eaque dolor vero dolores rem provident assumenda
+                            asperiores debitis sequi temporibus pariatur ducimus voluptatum facilis, ut porro? Dicta
+                            fuga et
+                            possimus! Placeat deserunt laudantium obcaecati iste?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--    END BIOGRAPHY SECTION            -->
+            <!--    MANTRA SECTION                   -->
+            <div class="mantra-content-container master-container">
+                <div class="mantra-main-content container">
+                    <div class="mantra-img-container">
+                        <img src="./assets/img/sucrose-1.png" alt="Sucrose">
+                    </div>
+                    <div class="mantra-description">
+                        <h1 class="mantra-titles">Explore, fight and never surrender</h1>
+                        <h2 class="mantra-titles">Today, a star rises</h2>
+                        <p>— The Genshin Impact Team</p>
+                    </div>
+                </div>
+            </div>
+            <!--    END MANTRA SECTION               -->
+            <!--    STATISTICS SECTION               -->
+            <div class="statistics-content-container master-container">
+                <div class="statistics-main-content container">
+                    <div class="statistics-list">
+                        <div class="statistics-element">
+                            <img src="./assets/img/thumb-up-outline.png" alt="" width="48px" height="48px">
+                            <h2 class="statistic-title">100% QUALITY</h2>
+                        </div>
+                        <div class="statistics-element">
+                            <img src="./assets/img/download.png" alt="" width="48px" height="48px">
+                            <h2 class="statistic-title">10M+ DOWNLOADS</h2>
+                        </div>
+                        <div class="statistics-element">
+                            <img src="./assets/img/star-outline.png" alt="" width="48px" height="48px">
+                            <h2 class="statistic-title">10/10 IGN </h2>
+                        </div>
+                        <div class="statistics-element">
+                            <img src="./assets/img/account-multiple.png" alt="" width="48px" height="48px">
+                            <h2 class="statistic-title">46M+ PLAYERS</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    END STATISTICS SECTION           -->
+            <!--    SHOP SECTION                     -->
+            <div id="shop" class="shop-content-container master-container">
+                <div class="shop-main-content container">
+                    <div class="section-title-container">
+                        <div class="section-title-content">
+                            <h1>Teyvat shop</h1>
+                            <div class="section-title-divider"></div>
+                        </div>
+                    </div>
+                    <div class="shop-row">
+                        <div class="shop-element">
+                            <div class="shop-element-img-container">
+                                <img src="./assets/img/amber-pillow.jpg" alt="" class="shop-element-img">
+                                <div class="shop-element-img-hovered"></div>
+                                <div class="shop-element-img-hovered-desc">
+                                    <a href="#" class="actioncall-btn">ADD TO CART</a>
+                                    <div class="shop-element-rate-container">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate inactive">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-element-desc">
+                                <h2>Amber Pillow</h2>
+                                <p>$39.99 </p>
+                            </div>
+                        </div>
+                        <div class="shop-element">
+                            <div class="shop-element-img-container">
+                                <div class="shop-element-onsale">Sale!</div>
+                                <img src="./assets/img/shirt-merch.png" alt="" class="shop-element-img">
+                                <div class="shop-element-img-hovered"></div>
+                                <div class="shop-element-img-hovered-desc">
+                                    <a href="#" class="actioncall-btn">ADD TO CART</a>
+                                    <div class="shop-element-rate-container">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate inactive">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-element-desc">
+                                <h2>Genshin Impact Tee</h2>
+                                <p><del>$19.99</del>&nbsp; <span class="onsale-price"> $10.99</span> </p>
+                            </div>
+                        </div>
+                        <div class="shop-element">
+                            <div class="shop-element-img-container">
+                                <div class="shop-element-onsale">Sale!</div>
+                                <img src="./assets/img/decorative-merch.png" alt="" class="shop-element-img">
+                                <div class="shop-element-img-hovered"></div>
+                                <div class="shop-element-img-hovered-desc">
+                                    <a href="#" class="actioncall-btn">ADD TO CART</a>
+                                    <div class="shop-element-rate-container">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-element-desc">
+                                <h2>Ningguang Figurine</h2>
+                                <p><del>$59.99</del>&nbsp; <span class="onsale-price"> $39.99</span> </p>
+                            </div>
+                        </div>
+                        <div class="shop-element">
+                            <div class="shop-element-img-container">
+                                <div class="shop-element-outofstock">Out of stock</div>
+                                <img src="./assets/img/visions-merch.jpg" alt="" class="shop-element-img">
+                                <div class="shop-element-img-hovered"></div>
+                                <div class="shop-element-img-hovered-desc">
+                                    <a href="#" class="actioncall-btn">SHOW DETAILS</a>
+                                    <div class="shop-element-rate-container">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                        <img src="./assets/img/star.png" alt="" class="shop-element-rate active">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-element-desc">
+                                <h2>Element Vision</h2>
+                                <p>$59.99 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-footer">
+                        <a href="#" class="actioncall-btn">
+                            ALL SHOP
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--    END SHOP SECTION                 -->
+            <!--    INFO BANNER SECTION              -->
+            <div class="infobanner-content-container master-container">
+                <div class="infobanner-bg-opacity"></div>
+                <div class="infobanner-main-content container">
+                    <div class="infobanner-contact-data">
+                        <h2 class="infobanner-section-title">Contact Info</h2>
+                        <div class="infobanner-desc">
+                            <p class="infobanner-section-p">126 Favonius St</p>
+                            <p class="infobanner-section-p">Mondstad, Teyvat, 1920720</p>
+                            <p class="infobanner-section-p">genshingenius@mihoyo.com</p>
+                            <p class="infobanner-section-p">1-024-480-1080</p>
+                        </div>
+                        <a href="#" class="actioncall-btn infobanner-btn">OPEN MAP</a>
+                    </div>
+                    <div class="infobanner-contact-data">
+                        <h2 class="infobanner-section-title">Server Timezones</h2>
+                        <div class="infobanner-desc">
+                            <p class="infobanner-section-p">America (UTC-5) </p>
+                            <p class="infobanner-section-p">Europe (UTC+1) </p>
+                            <p class="infobanner-section-p">Asia (UTC+8) </p>
+                            <p class="infobanner-section-p">TW, HK, MO (UTC+8)</p>
+                        </div>
+                        <a href="#" class="actioncall-btn infobanner-btn">MORE DETAILS</a>
+                    </div>
+                    <div class="infobanner-contact-data">
+                        <h2 class="infobanner-section-title">Latest Posts</h2>
+                        <div class="infobanner-desc">
+                            <div class="infobanner-list-item">
+                                <div class="infobanner-list-pointer display-inline"></div>
+                                <a href="#" class="infobanner-section-a display-inline">"A new Star Approaches" Version
+                                    1.1
+                                    Details</a>
+                            </div>
+                            <div class="infobanner-list-item">
+                                <div class="infobanner-list-pointer display-inline"></div>
+                                <a href="#" class="infobanner-section-a display-inline">Genshin Impact EP - Tales Told
+                                    by
+                                    the Wind </a>
+                            </div>
+                            <div class="infobanner-list-item">
+                                <div class="infobanner-list-pointer display-inline"></div>
+                                <a href="#" class="infobanner-section-a display-inline">City of Winds and Idylls</a>
+                            </div>
+                            <div class="infobanner-list-item">
+                                <div class="infobanner-list-pointer display-inline"></div>
+                                <a href="#" class="infobanner-section-a display-inline">New Archon Chapter Details </a>
+                            </div>
+
+                        </div>
+                        <a href="#" class="actioncall-btn infobanner-btn">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!--    END INFO BANNER SECTION          -->
+            <!--    UPCOMING EVENTS SECTION          -->
+            <div class="events-content-container master-container">
+                <div class="events-main-content container">
+                    <div class="events-title section-title-container">
+                        <div class="section-title-content">
+                            <h1>UPCOMING events</h1>
+                            <div class="section-title-divider"></div>
+                        </div>
+                    </div>
+                    <div class="events-row">
+                        <div class="events-section-container">
+                            <div class="event-container">
+                                <div class="event-date-container">
+                                    <h2 class="event-date-day">9</h2>
+                                    <p class="event-date-month">November</p>
+                                </div>
+                                <div class="event-desc">
+                                    <a href="#" class="event-title">Fading Stars Event</a>
+                                    <p class="event-duration">November 9, 2020 @ 12:00pm - November 11, 2020 @ 11:00pm
+                                    </p>
+                                    <div class="event-location">
+                                        <img src="./assets/img/map-marker.png" alt="" class="icon-24 event-icon">
+                                        <p>Stardust Mountains, Mondstad</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-container">
+                                <div class="event-date-container">
+                                    <h2 class="event-date-day">17</h2>
+                                    <p class="event-date-month">November</p>
+                                </div>
+                                <div class="event-desc">
+                                    <a href="#" class="event-title">Seize the Hill Event</a>
+                                    <p class="event-duration">November 17, 2020 @ 16:00pm - November 17, 2020 @ 17:00pm
+                                    </p>
+                                    <div class="event-location">
+                                        <img src="./assets/img/map-marker.png" alt="" class="icon-24 event-icon">
+                                        <p>Dandelion Hills, Mondstad</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-hovered">
+                                <a href="#" class="event-a">
+                                    <p>View More...</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="events-section-container">
+                            <div class="event-container">
+                                <div class="event-date-container">
+                                    <h2 class="event-date-day">9</h2>
+                                    <p class="event-date-month">November</p>
+                                </div>
+                                <div class="event-desc">
+                                    <a href="#" class="event-title">Fading Stars Event</a>
+                                    <p class="event-duration">November 9, 2020 @ 12:00pm - November 11, 2020 @ 11:00pm
+                                    </p>
+                                    <div class="event-location">
+                                        <img src="./assets/img/map-marker.png" alt="" class="icon-24 event-icon">
+                                        <p>Stardust Mountains, Mondstad</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-container">
+                                <div class="event-date-container">
+                                    <h2 class="event-date-day">17</h2>
+                                    <p class="event-date-month">November</p>
+                                </div>
+                                <div class="event-desc">
+                                    <a href="#" class="event-title">Seize the Hill Event</a>
+                                    <p class="event-duration">November 17, 2020 @ 16:00pm - November 17, 2020 @ 17:00pm
+                                    </p>
+                                    <div class="event-location">
+                                        <img src="./assets/img/map-marker.png" alt="" class="icon-24 event-icon">
+                                        <p>Dandelion Hills, Mondstad</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-hovered">
+                                <a href="#" class="event-a">
+                                    <p>View More...</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    END UPCOMING EVENTS SECTION      -->
+            <!--    LATEST TWEETS SECTION            -->
+            <div class="latest-tweets-content-container master-container">
+                <div class="latest-tweets-main-content container-upper">
+                    <div class="twitter-logo">
+                        <img src="./assets/img/twitter.png" alt="" class="twitter-img">
+                        <p>2 Months Ago</p>
+                    </div>
+                    <div class="tweet-main">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptate at hic obcaecati quo
+                            aspernatur! </p>
+                    </div>
+                    <div class="tweet-slider-control">
+                        <img src="./assets/img/chevron-left.png" alt="" class="icon-24">
+                        <div class="nav-divider twitta"></div>
+                        <img src="./assets/img/chevron-right.png" alt="" class="icon-24">
+                    </div>
+                </div>
+            </div>
+            <!--    END LATEST TWEETS SECTION        -->
         </div>
-        <!--    END EDUCATIONAL SECTION         -->
-        <div id='skills'>
-            <!--    SKILLS SECTION                  -->
-            <div class="skills-section container">
-                <div class="title-container">
-                    <h1>Skills</h1>
-                    <h2>I love manga and learn about life</h2>
-                    <span class="section-title-separator"></span>
-                </div>
-                <div class="skills-main-container">
-                    <div class="skills-container">
-                        <h3 class="skill-container-title">TECHNICAL SKILLS</h3>
-                        <div class="skill-title-underline"></div>
-                        <div class="skillometer-container">
-                            <h3 class="skillometer-title">HTML & CSS</h3>
-                            <div class="skillometer-completeline"></div>
-                            <div id="skillometer1_line70" class="skillometer-line "></div>
-                            <div id="skillometer1_card70" class="skillometer-card">70%</div>
-                        </div>
-                        <div class="skillometer-container">
-                            <h3 class="skillometer-title">REACT NATIVE</h3>
-                            <div class="skillometer-completeline"></div>
-                            <div id="skillometer1_line90" class="skillometer-line "></div>
-                            <div id="skillometer1_card90" class="skillometer-card ">90%</div>
-                        </div>
-                        <div class="skillometer-container">
-                            <h3 class="skillometer-title">PYTHON</h3>
-                            <div class="skillometer-completeline"></div>
-                            <div id="skillometer1_line80" class="skillometer-line "></div>
-                            <div id="skillometer1_card80" class="skillometer-card ">80%</div>
-                        </div>
-                        <div class="skillometer-container">
-                            <h3 class="skillometer-title">JQUERY</h3>
-                            <div class="skillometer-completeline"></div>
-                            <div id="skillometer1_line60" class="skillometer-line "></div>
-                            <div id="skillometer1_card60" class="skillometer-card ">60%</div>
-                        </div>
-                    </div>
-                    <div class="skills-container">
-                        <h3 class="skill-container-title">PERSONAL SKILLS</h3>
-                        <div class="skill-title-underline"></div>
-                        <div class="skillometer-container">
-                            <h3 class="skillometer-title">LEADERSHIP</h3>
-                            <div class="skillometer-completeline"></div>
-                            <div id="skillometer2_line90" class="skillometer-line"></div>
-                            <div id="skillometer2_card90" class="skillometer-card">90%</div>
-                        </div>
-                        <div class="skillometer-container">
-                            <h3 class="skillometer-title">CREATIVITY</h3>
-                            <div class="skillometer-completeline"></div>
-                            <div id="skillometer2_line70" class="skillometer-line"></div>
-                            <div id="skillometer2_card70" class="skillometer-card">70%</div>
-                        </div>
-                        <div class="skillometer-container">
-                            <h3 class="skillometer-title">MOODY</h3>
-                            <div class="skillometer-completeline"></div>
-                            <div id="skillometer2_line60" class="skillometer-line"></div>
-                            <div id="skillometer2_card60" class="skillometer-card">60%</div>
-                        </div>
-                        <div class="skillometer-container">
-                            <h3 class="skillometer-title">TEAM WORK</h3>
-                            <div class="skillometer-completeline"></div>
-                            <div id="skillometer2_line80" class="skillometer-line "></div>
-                            <div id="skillometer2_card80" class="skillometer-card ">80%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--    END SKILLS SECTION              -->
-            <!--    EXPERTISE SECTION               -->
-            <div class="expertise-section container">
-                <div class="title-container">
-                    <h1>Expertise</h1>
-                    <h2>Experience is sometimes the big difference between success and failure</h2>
-                    <span class="section-title-separator"></span>
-                </div>
-                <div class="expertise-main-container">
-                    <div class="expertise-main-row">
-                        <div class="expertise-container">
-                            <div class="expertise-percent">
-                                <div class="expertise-percent-circle1"></div>
-                                <div id='circle70_row1' class="expertise-percent-circle2"></div>
-                                <div class="expertise-percent-container">70%</div>
-                            </div>
-                            <h3 class="skillometer-title">WEB DESIGN & DEV</h3>
-                        </div>
-                        <div class="expertise-container">
-                            <div class="expertise-percent">
-                                <div class="expertise-percent-circle1"></div>
-                                <div id='circle80_row1' class="expertise-percent-circle2"></div>
-                                <div class="expertise-percent-container">80%</div>
-                            </div>
-                            <h3 class="skillometer-title">ANDROID DESIGN WITH REACT NATIVE</h3>
-                        </div>
-                        <div class="expertise-container">
-                            <div class="expertise-percent">
-                                <div class="expertise-percent-circle1"></div>
-                                <div id='circle90_row1' class="expertise-percent-circle2"></div>
-                                <div class="expertise-percent-container">90%</div>
-                            </div>
-                            <h3 class="skillometer-title">DESKTOP APPS DESIGN & DEV</h3>
-                        </div>
-                    </div>
-                    <div class="expertise-main-row">
-                        <div class="expertise-container">
-                            <div  class="expertise-percent">
-                                <div class="expertise-percent-circle1"></div>
-                                <div id="circle60_row2" class="expertise-percent-circle2"></div>
-                                <div class="expertise-percent-container">60%</div>
-                            </div>
-                            <h3 class="skillometer-title">PATH OF LIFE</h3>
-                        </div>
-                        <div class="expertise-container">
-                            <div class="expertise-percent">
-                                <div class="expertise-percent-circle1"></div>
-                                <div id='circle90_row2' class="expertise-percent-circle2"></div>
-                                <div class="expertise-percent-container">90%</div>
-                            </div>
-                            <h3 class="skillometer-title">CRY TIL' I FALL ASLEEP</h3>
-                        </div>
-                        <div class="expertise-container">
-                            <div class="expertise-percent">
-                                <div class="expertise-percent-circle1"></div>
-                                <div id='circle70_row2' class="expertise-percent-circle2"></div>
-                                <div class="expertise-percent-container">70%</div>
-                            </div>
-                            <h3 class="skillometer-title">PYTHON APPS DEV</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--    END EXPERTISE SECTION           -->
-        <!--    WORK PROCESS SECTION            -->
-        <div class="workprocess container">
-            <div class="title-container">
-                <h1>WORK PROCESS</h1>
-                <h2>Have faith in the process and you'll succeed</h2>
-                <span class="section-title-separator"></span>
-            </div>
-            <div class="workprocess-main-container">
-                <div class="workprocess-step-container">
-                    <div class="workprocess-step-icon step-icon-1">
-                        <img src="./assets/img/lightbulb-on.png" alt='Idea' />
-                    </div>
-                    <h3 class="skillometer-title">IDEA</h3>
-                </div>
-                <div class="workprocess-step-pointer">
-                    <img src="./assets/img/arrow-right.png" alt='Right' />
-                </div>
-                <div class="workprocess-step-container">
-                    <div class="workprocess-step-icon step-icon-2">
-                        <img src="./assets/img/pencil-outline.png" alt='Idea' />
-                    </div>
-                    <h3 class="skillometer-title">PROCESS</h3>
-                </div>
-                <div class="workprocess-step-pointer">
-                    <img src="./assets/img/arrow-right.png" alt='Right' />
-                </div>
-                <div class="workprocess-step-container">
-                    <div class="workprocess-step-icon step-icon-1">
-                        <img src="./assets/img/xml.png" alt='Dev' />
-                    </div>
-                    <h3 class="skillometer-title">DEVELOP</h3>
-                </div>
-                <div class="workprocess-step-pointer">
-                    <img src="./assets/img/arrow-right.png" alt='Right' />
-                </div>
-                <div class="workprocess-step-container">
-                    <div class="workprocess-step-icon step-icon-2">
-                        <img src="./assets/img/test-tube.png" alt='Test' />
-                    </div>
-                    <h3 class="skillometer-title">TEST</h3>
-                </div>
-                <div class="workprocess-step-pointer">
-                    <img src="./assets/img/arrow-right.png" alt='Right' />
-                </div>
-                <div class="workprocess-step-container">
-                    <div class="workprocess-step-icon step-icon-1">
-                        <img src="./assets/img/rocket-launch-outline.png" alt='Test' />
-                    </div>
-                    <h3 class="skillometer-title">LAUNCH</h3>
-                </div>
-            </div>
-        </div>
-        <!--    END WORK PROCESS SECTION        -->
-        <!--    PORTFOLIO SECTION               -->
-        <div id="portfolio" class="portfolio container">
-            <div class="title-container">
-                <h1>PORTFOLIO</h1>
-                <h2>LET ME SHOW YOU HOW THE BOSS DOES IT.</h2>
-                <span class="section-title-separator"></span>
-            </div>
-            <div class="portfolio-main-container">
-                <div class="portfolio-column">
-                    <div class="portfolio-element">
-                        <div class="portfolio-img-container">
-                            <img src="./assets/img/portfolio-medium-1.png" alt="Large" class="portfolio-img">
-                            <div class="portfolio-img-hover">
-                                <div class="portfolio-icon-container portfolio-icon1">
-                                    <a href="#">
-                                        <img src="./assets/img/magnify.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                                <div class="portfolio-icon-container portfolio-icon2">
-                                    <a href="#">
-                                        <img src="./assets/img/link-variant.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>PLANETES</h5>
-                        <p>Outer space</p>
-                    </div>
-                    <div class="portfolio-element">
-                        <div class="portfolio-img-container">
-                            <img src="./assets/img/portfolio-large-1.png" alt="Large" class="portfolio-img">
-                            <div class="portfolio-img-hover">
-                                <div class="portfolio-icon-container portfolio-icon1">
-                                    <a href="#">
-                                        <img src="./assets/img/magnify.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                                <div class="portfolio-icon-container portfolio-icon2">
-                                    <a href="#">
-                                        <img src="./assets/img/link-variant.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>AJIN</h5>
-                        <p>Inferno</p>
-                    </div>
-                    <div class="portfolio-element">
-                        <div class="portfolio-img-container">
-                            <img src="./assets/img/portfolio-small-1.png" alt="Large" class="portfolio-img">
-                            <div class="portfolio-img-hover">
-                                <div class="portfolio-icon-container portfolio-icon1 portfolio-icon-container-small">
-                                    <a href="#">
-                                        <img src="./assets/img/magnify.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                                <div class="portfolio-icon-container portfolio-icon2 portfolio-icon-container-small">
-                                    <a href="#">
-                                        <img src="./assets/img/link-variant.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>Naruto</h5>
-                        <p>Tsukuyomi</p>
-                    </div>
-                </div>
-                <div class="portfolio-column">
-                    <div class="portfolio-element">
-                        <div class="portfolio-img-container">
-                            <img src="./assets/img/portfolio-small-2.png" alt="Large" class="portfolio-img">
-                            <div class="portfolio-img-hover">
-                                <div class="portfolio-icon-container portfolio-icon1 portfolio-icon-container-small">
-                                    <a href="#">
-                                        <img src="./assets/img/magnify.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                                <div class="portfolio-icon-container portfolio-icon2 portfolio-icon-container-small">
-                                    <a href="#">
-                                        <img src="./assets/img/link-variant.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>Naruto</h5>
-                        <p>Sorry</p>
-                    </div>
-                    <div class="portfolio-element">
-                        <div class="portfolio-img-container">
-                            <img src="./assets/img/portfolio-large-2.png" alt="Large" class="portfolio-img">
-                            <div class="portfolio-img-hover">
-                                <div class="portfolio-icon-container portfolio-icon1">
-                                    <a href="#">
-                                        <img src="./assets/img/magnify.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                                <div class="portfolio-icon-container portfolio-icon2">
-                                    <a href="#">
-                                        <img src="./assets/img/link-variant.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>AJIN</h5>
-                        <p>Run away</p>
-                    </div>
-                    <div class="portfolio-element">
-                        <div class="portfolio-img-container">
-                            <img src="./assets/img/portfolio-medium-2.png" alt="Large" class="portfolio-img">
-                            <div class="portfolio-img-hover">
-                                <div class="portfolio-icon-container portfolio-icon1">
-                                    <a href="#">
-                                        <img src="./assets/img/magnify.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                                <div class="portfolio-icon-container portfolio-icon2">
-                                    <a href="#">
-                                        <img src="./assets/img/link-variant.png" alt='Zoom' />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>SIDOOH</h5>
-                        <p>Familiar scenery</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--    END PORTFOLIO SECTION           -->
-        <!--    START PROJECT SECTION           -->
-        <div class="starter container">
-            <div class="title-container">
-                <h1 class="starter-title">Wanna write history together?</h1>
-                <a href="#contact" class="starter-btn">
-                    Let me know
-                    <img src="./assets/img/message-processing.png" alt="Message me" class="starter-btn-icon">
+        <!--    FOOTER                           -->
+        <div class="footer-content-container master-container-down">
+            <div class="footer-logo-container">
+                <a href="#">
+                    <img src="./assets/img/logo.png" alt="" class="footer-logo">
                 </a>
             </div>
-        </div>
-        <!--    END START PROJECT SECTION       -->
-        <!--    STATISTICS SECTION              -->
-        <div id='statistics' class="statistics container">
-            <div class="statistics-main-container">
-                <div class="statistic">
-                    <h1 id='apples' class="statistic-number count">0</h1> 
-                    <p class="statistic-desc">APPLES SOLD</p>
-                </div>
-                <div class="statistic">
-                    <h1 id='coffees' class="statistic-number">0</h1>
-                    <p class="statistic-desc">CUP OF COFFEES</p>
-                </div>
-                <div class="statistic">
-                    <h1 id='tumblrs' class="statistic-number">0</h1>
-                    <p class="statistic-desc">TUMBLR POSTS</p>
-                </div>
-                <div class="statistic">
-                    <h1 id='mangas' class="statistic-number">0</h1>
-                    <p class="statistic-desc">MANGAS READ</p>
-                </div>
+            <div class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <div class="nav-divider"></div>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <div class="nav-divider"></div>
+                    <li><a href="#">FAQ</a></li>
+                    <li>
+                        <div class="nav-divider"></div>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-socialmedia">
+                <a href="#">
+                    <div class="footer-socialmedia-icon-container">
+                        <img src="./assets/img/twitter.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="footer-socialmedia-icon-container">
+                        <img src="./assets/img/youtube.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="footer-socialmedia-icon-container">
+                        <img src="./assets/img/reddit.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="footer-socialmedia-icon-container">
+                        <img src="./assets/img/google-plus.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="footer-desc">
+                <a href="#">Privacy Policy </a>
+                <p> | This is a sample website - She don' give a foo © 2020 All rights reserved.</p>
             </div>
         </div>
-        <!--    END STATISTICS SECTION          -->
-        <!--    TESTIMONIALS SECTION            -->
-        <div id='testimonials' class="testimonials container">
-            <div class="title-container">
-                <h1>TESTIMONIALS</h1>
-                <h2>LET MY SUCCESS MAKE ALL THE NOISE</h2>
-                <span class="section-title-separator"></span>
-            </div>
-            <div class="testimonials-main-content">
-                <div id="testimonial_1" class="testimonial-container">
-                    <div class="testimonial-content">
-                        <p class="testimonial-desc">You never understood anything. You thought that everyone else felt
-                            the
-                            same as you do.
-                            You misunderstood from the very beginning. You just believed what you wanted to believe. Man
-                            fears the darkness, and so he scrapes away at the edges of it with fire.
-                            Then what is your heart for?
-                        </p>
-                        <p class="testimonial-author">Ayanami Rei, <span class="text-primary">NERV</span> </p>
-                        <div id="testimonial-stepper1" class="testimonial-slideshow-stepper">
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-active" />
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-inactive" />
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-inactive" />
-                        </div>
-                    </div>
-                    <div class="testimonial-pic-container">
-                        <img src="./assets/img/testimonial-pic-1.jpg" alt="" class="testimonial-img">
-                    </div>
-                </div>
-                <div id="testimonial_2" class="testimonial-container">
-                    <div class="testimonial-content">
-                        <p class="testimonial-desc">
-                            Don't run away. We will always fight you in the darkness of the night when it's more advantegous for you.
-                            We're humans in flesh and blood. Wounds don't simply close up and the limbs we lose won't ever come back.
-                            So don't run.
-                        </p>
-                        <p class="testimonial-author">Kamado Tanjiro, <span class="text-primary">Demon slayer corps</span> </p>
-                        <div id="testimonial-stepper2" class="testimonial-slideshow-stepper">
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-inactive" />
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-active" />
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-inactive" />
-                        </div>
-                    </div>
-                    <div class="testimonial-pic-container">
-                        <img src="./assets/img/testimonial-pic-2.png" alt="" class="testimonial-img">
-                    </div>
-                </div>
-                <div id="testimonial_3" class="testimonial-container">
-                    <div class="testimonial-content">
-                        <p class="testimonial-desc">
-                            And you may believe that there is no god nor heroes in this accursed world. But if you pray from the bottom of 
-                            your heart, you will find peace... and people will come to your aid.
-                        </p>
-                        <p class="testimonial-author">Muichiro Tokitou, <span class="text-primary">Demon slayer corps hashira</span> </p>
-                        <div id="testimonial-stepper3" class="testimonial-slideshow-stepper">
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-inactive" />
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-inactive" />
-                            <img src="./assets/img/checkbox-blank-circle.png" class="testimonial-step step-active" />
-                        </div>
-                    </div>
-                    <div class="testimonial-pic-container">
-                        <img src="./assets/img/testimonial-pic-3.jpg" alt="" class="testimonial-img">
-                    </div>
-                </div>
-            </div>
+        <!--    END FOOTER                       -->
+        <!--   RETURN TO TOP BUTTON             -->
+        <div id='top_btn' class="topbtn-icon-container display-none">
+            <a href="#">
+                <img src="./assets/img/chevron-up.png" alt="Go to Top">
+            </a>
         </div>
-        <!--    END TESTIMONIALS SECTION        -->
-        <!--    CONTACT ME SECTION              -->
-        <div id="contact" class="contactme container">
-            <div class="title-container">
-                <h1>Contact me</h1>
-                <h2>Are you interested?</h2>
-                <span class="section-title-separator"></span>
-            </div>
-            <div class="contactme-main-container">
-                <div class="contactme-container">
-                    <div class="contactme-info">
-                        <p class="contactme-info-title text-primary">Contact info:</p>
-                        <p class="contactme-info-data">E: ddelacruz_18@alu.uabcs.mx</p>
-                        <p class="contactme-info-data">P: I'm still not giving up my phone.</p>
-                    </div>
-                    <div class="contactme-whatido">
-                        <p class="contactme-info-title text-primary">What i can do:</p>
-                        <p class="contactme-info-data">
-                            Well I suppose that it doesn't really matters what I can do for a simple reason: If I don't
-                            know how to do
-                            something, I learn how. Well, honestly I can do pretty much everything in C++, Java
-                            applications, Python both scripts and
-                            User Interfaces and of course, Web design and development.
-                        </p>
-                    </div>
-                </div>
-                <div class="contactme-container">
-                    <form id="contact_form" class="form-contact">
-                        <input type="text" name="contact_name" id="contact_name" class="contactme-form-input"
-                            placeholder="Your name" required>
-                        <input type="email" name="contact_email" id="contact_email" class="contactme-form-input"
-                            placeholder="Your email" required>
-                        <select name="contact_reason" id="contact_reason" class="contactme-form-input" required>
-                            <option value="1" selected>I have an idea.</option>
-                            <option value="2">Let's get a coffee sometime.</option>
-                            <option value="3">I want to give you money.</option>
-                            <option value="4">I just want to say hi.</option>
-                        </select>
-                        <textarea name="contact_mssg" id="contact_mssg" rows="5" class="contactme-form-input"
-                            placeholder="Your message" required></textarea>
-                        <button type="submit" class="contactme-form-btn">
-                            Send message
-                            <img src="./assets/img/send.png" alt="" class="contactme-form-btn-icon">
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!--    END CONTACT ME SECTION          -->
-        <div class="footer container">
-            <div class="footer-info-container">
-                <div class="footer-social-media">
-                    <ul class="footer-social-list">
-                        <li>
-                            <a href="#" class="footer-social-a"><img src="./assets/img/facebook-black.png"
-                                    alt="Social Icon" class="footer-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-social-a"><img src="./assets/img/twitter-black.png"
-                                    alt="Social Icon" class="footer-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-social-a"><img src="./assets/img/reddit-black.png"
-                                    alt="Social Icon" class="footer-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-social-a"><img src="./assets/img/google-plus-black.png"
-                                    alt="Social Icon" class="footer-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-social-a"><img src="./assets/img/youtube-black.png"
-                                    alt="Social Icon" class="footer-social-icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-social-a"><img src="./assets/img/linkedin-black.png"
-                                    alt="Social Icon" class="footer-social-icon"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-icon-container">
-                    <img src="./assets/img/footer-img.jpg" alt="" class="footer-img">
-                </div>
-            </div>
-            <div class="footer-cpyright">
-                © Daniel De la Cruz. All rights reserved 2020.
-            </div>
-        </div>
+        <!--   END RETURN TO TOP BUTTON         -->
     </div>
-    <!--   END MAIN PAGE CONTENT        -->
     <script src="./assets/js/main.js"></script>
 </body>
 
